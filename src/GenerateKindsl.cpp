@@ -19,7 +19,7 @@ std::string print_inertia_params(const std::string& linkName, const LinkInfo& li
   yz.precision(std::numeric_limits<double>::digits10);
   xz.precision(std::numeric_limits<double>::digits10);
 
-  out << "\tinertia_params {" << std::endl;
+  out << "\tinertia_properties {" << std::endl;
 
   if (!link.inertia_) {
     std::cout << "WARNING: Missing inertia parameters for link " << linkName << std::endl;
